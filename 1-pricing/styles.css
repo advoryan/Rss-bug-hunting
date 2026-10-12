@@ -34,10 +34,10 @@ body {
 
 .plans {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  gap: 0;
+  gap: 24px;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -49,6 +49,8 @@ body {
   padding: 0;
   width: 280px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .plan--featured {
@@ -78,6 +80,7 @@ body {
   list-style: none;
   margin-bottom: 24px;
   text-align: left;
+  flex-grow: 1;
 }
 
 .features li {
@@ -94,6 +97,7 @@ body {
 
 .btn {
   display: inline-block;
+  align-self: center;
   padding: 12px 28px;
   border-radius: 8px;
   background: #cbd5e1;
